@@ -41,7 +41,7 @@ const Certificates = () => {
                       alt={cert.title}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent"></div>
+                    <div className="absolute inset-0 from-slate-900 via-slate-900/60 to-transparent"></div>
                   </div>
                 )}
 

@@ -64,9 +64,8 @@ const Contact = () => {
             <span className="dark:text-white text-slate-800">TOUCH</span>
           </h2>
           <p className="text-xl dark:text-slate-400 text-slate-600 font-cascadia">
-            Mari berkolaborasi dan ciptakan sesuatu yang amazing!
+            Let's collaborate and create something amazing!
           </p>
-
         </motion.div>
 
         <div className="w-100">
@@ -87,8 +86,8 @@ const Contact = () => {
                     <FaPaperPlane className="text-white text-xl" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold dark:text-white text-slate-900">Hubungi Saya</h3>
-                    <p className="dark:text-slate-400 text-slate-600">Ada yang ingin didiskusikan? Kirim pesan ke saya!</p>
+                    <h3 className="text-2xl font-bold dark:text-white text-slate-900">Get In Touch</h3>
+                    <p className="dark:text-slate-400 text-slate-600">Have something to discuss? Send me a message!</p>
                   </div>
                 </div>
 
@@ -136,7 +135,7 @@ const Contact = () => {
                     className="w-full dark:bg-gradient-to-r dark:from-cyan-600 dark:to-emerald-600 dark:hover:from-cyan-500 dark:hover:to-emerald-500 bg-cyan-600 hover:bg-cyan-500 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 flex items-center justify-center gap-3 shadow-lg hover:shadow-cyan-500/25 disabled:opacity-50"
                   >
                     <FaPaperPlane />
-                    <span>Kirim Pesan</span>
+                    <span>Send me</span>
                   </motion.button>
                 </form>
               </div>
@@ -145,7 +144,7 @@ const Contact = () => {
             {/* Divider */}
             <div className="flex items-center gap-4">
               <div className="flex-1 h-px bg-gradient-to-r from-transparent via-slate-600 to-transparent"></div>
-              <span className="text-slate-400 font-semibold">atau</span>
+              <span className="text-slate-400 font-semibold">Social</span>
               <div className="flex-1 h-px bg-gradient-to-r from-transparent via-slate-600 to-transparent"></div>
             </div>
 
