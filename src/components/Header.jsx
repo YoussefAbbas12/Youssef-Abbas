@@ -69,7 +69,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           <a href="/" className="flex items-center gap-3 group">
             <img src={bangzenLogo} alt="Logo" className="w-8 h-8 rounded-full group-hover:scale-110 transition-transform" />
-            <span className="font-bold text-lg dark:text-white text-slate-900 hidden sm:inline">Zain</span>
+            <span className="font-bold text-lg dark:text-white text-slate-900 hidden sm:inline">Youssef</span>
           </a>
 
           <nav className={`hidden lg:flex items-center gap-8 ${isNavbarVisible ? 'block' : 'hidden'}`}>

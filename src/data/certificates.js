@@ -1,98 +1,74 @@
 export const certificates = [
   {
     id: 1,
-    title: "Full Stack Web Development",
-    issuer: "Udemy",
-    issue_date: "2023-06-15",
-    image_url: "https://via.placeholder.com/400x300?text=Full+Stack+Cert",
-    credential_url: "https://udemy.com/certificate/full-stack-web"
+    title: "International Diploma",
+    issuer: "Pearson (BTEC)",
+    issue_date: "2024-08-05",
+    image_url: "person 1.jpg",
+    credential_url: "https://drive.google.com/file/d/1FzpOPM0-GBCjcfO9AKtSWmowCcmOIfs_/view?usp=sharing"
   },
   {
     id: 2,
-    title: "React Advanced Patterns",
-    issuer: "Frontend Masters",
-    issue_date: "2023-08-20",
-    image_url: "https://via.placeholder.com/400x300?text=React+Cert",
-    credential_url: "https://frontendmasters.com/certificate/react"
-  },
-  {
-    id: 3,
-    title: "JavaScript ES6 Mastery",
-    issuer: "Codecademy",
-    issue_date: "2023-05-10",
-    image_url: "https://via.placeholder.com/400x300?text=JavaScript+Cert",
-    credential_url: "https://codecademy.com/certificate/javascript"
-  },
-  {
-    id: 4,
-    title: "Node.js and Express",
-    issuer: "Coursera",
-    issue_date: "2023-07-25",
-    image_url: "https://via.placeholder.com/400x300?text=Node+Cert",
-    credential_url: "https://coursera.com/certificate/nodejs"
-  },
-  {
-    id: 5,
-    title: "Database Design with SQL",
-    issuer: "DataCamp",
-    issue_date: "2023-09-05",
-    image_url: "https://via.placeholder.com/400x300?text=SQL+Cert",
-    credential_url: "https://datacamp.com/certificate/sql"
+    title: "SCTE Compitition",
+    issuer: "Ministry of Education",
+    issue_date: "2023-06-15",
+    image_url: "SCTE.jpg",
+    credential_url: "https://drive.google.com/file/d/1nmLFYceDlNuwDhAzB973Q92ODdWtS0c3/view?usp=sharing"
   },
   {
     id: 6,
-    title: "Web Performance Optimization",
-    issuer: "Google DevRel",
-    issue_date: "2023-10-12",
-    image_url: "https://via.placeholder.com/400x300?text=Performance+Cert",
-    credential_url: "https://google.com/certificate/performance"
+    title: "Digitopia Compitition",
+    issuer: "Ministry of Education",
+    issue_date: "2025-09-5",
+    image_url: "digitopia.png",
+    credential_url: "https://drive.google.com/file/d/10qSpE1Q4v4YcRIweCtqQ9nX5gXX0PBQK/view?usp=sharing"
+  },
+  {
+    id: 3,
+    title: "English Deploma",
+    issuer: "UNIX Acadimy",
+    issue_date: "2025-11-22",
+    image_url: "unix1.png",
+    credential_url: "https://drive.google.com/file/d/15IY6TPXe6UPSGS_gt8pTrZkFxI8MlDlM/view?usp=sharing"
   },
   {
     id: 7,
-    title: "TypeScript Complete Guide",
-    issuer: "Udemy",
-    issue_date: "2023-11-01",
-    image_url: "https://via.placeholder.com/400x300?text=TypeScript+Cert",
-    credential_url: "https://udemy.com/certificate/typescript"
-  },
-  {
-    id: 8,
-    title: "Docker and Kubernetes",
-    issuer: "Linux Academy",
-    issue_date: "2023-04-18",
-    image_url: "https://via.placeholder.com/400x300?text=Docker+Cert",
-    credential_url: "https://linuxacademy.com/certificate/docker"
+    title: "English Deploma",
+    issuer: "UNIX Acadimy",
+    issue_date: "2025-11-22",
+    image_url: "unix2.png",
+    credential_url: "https://drive.google.com/file/d/11QQ89G3HG2nm9orX9DcdLyihmVi3bYcU/view?usp=sharing"
   },
   {
     id: 9,
-    title: "AWS Certified Developer",
-    issuer: "Amazon Web Services",
-    issue_date: "2023-03-22",
-    image_url: "https://via.placeholder.com/400x300?text=AWS+Cert",
-    credential_url: "https://aws.amazon.com/certificate"
+    title: "Python course",
+    issuer: "Mahara-Tech",
+    issue_date: "2024-07-15",
+    image_url: "python.png",
+    credential_url: "https://drive.google.com/file/d/1MSBIykDPEtdRmlpaqKREtLrwb5EY8Uu5/view?usp=sharing"
   },
   {
-    id: 10,
-    title: "Git and GitHub Mastery",
-    issuer: "Udemy",
-    issue_date: "2023-02-14",
-    image_url: "https://via.placeholder.com/400x300?text=Git+Cert",
-    credential_url: "https://udemy.com/certificate/git"
+    id: 4,
+    title: "HTML&CSS Certificate",
+    issuer: "Mahara-Tech",
+    issue_date: "2024-06-15",
+    image_url: "html.png",
+    credential_url: "https://drive.google.com/file/d/1k9k9iwCj3xtspenWS1GZnlij4tO6HULp/view?usp=sharing"
   },
   {
-    id: 11,
-    title: "SEO and Web Marketing",
-    issuer: "Moz Academy",
-    issue_date: "2023-01-30",
-    image_url: "https://via.placeholder.com/400x300?text=SEO+Cert",
-    credential_url: "https://moz.com/certificate/seo"
+    id: 5,
+    title: "JS Certificate",
+    issuer: "Mahara-Tech",
+    issue_date: "2024-06-25",
+    image_url: "js.png",
+    credential_url: "https://drive.google.com/file/d/1UjGnH4pBayUO6CqvoP_vebxmjVy4g1n5/view?usp=sharing"
   },
   {
-    id: 12,
-    title: "Responsive Web Design",
-    issuer: "freeCodeCamp",
-    issue_date: "2022-12-10",
-    image_url: "https://via.placeholder.com/400x300?text=RWD+Cert",
-    credential_url: "https://freecodecamp.com/certificate/responsive"
-  }
+    id: 8,
+    title: "Power Of AI",
+    issuer: "PlanB",
+    issue_date: "2025-09-22",
+    image_url: "planb.png",
+    credential_url: "https://drive.google.com/file/d/1CkURfhJLtA8vID91pQmB6SZEXUTLjgKP/view?usp=sharing"
+  },
 ];

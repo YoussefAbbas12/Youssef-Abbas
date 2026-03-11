@@ -23,18 +23,11 @@ const Projects = ({ activeTab }) => {
                 {project.image_url && (
                   <div className="relative h-48 overflow-hidden">
                     <img
-                      src={project.image_url}
+                      src={`projects/${project.image_url}`}
                       alt={project.title}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent"></div>
-                    {project.featured && (
-                      <div className="absolute top-4 right-4">
-                        <span className="px-3 py-1.5 text-xs font-bold rounded-full bg-gradient-to-r from-cyan-400 to-emerald-400 text-slate-900 shadow-lg">
-                          ⭐ Featured
-                        </span>
-                      </div>
-                    )}
                   </div>
                 )}
                 <div className="p-6">
@@ -92,7 +85,7 @@ const Projects = ({ activeTab }) => {
                 {cert.image_url && (
                   <div className="relative h-48 overflow-hidden">
                     <img
-                      src={cert.image_url}
+                      src={`certificate-images/${cert.image_url}`}
                       alt={cert.title}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
