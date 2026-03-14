@@ -1,6 +1,5 @@
 import React, { useCallback, useLayoutEffect, useRef, useState, useEffect } from 'react';
 import { gsap } from 'gsap';
-import { useTheme } from '../contexts/ThemeContext';
 
 export const StaggeredMenu = ({
     position = 'right',
@@ -22,7 +21,7 @@ export const StaggeredMenu = ({
     isOpen, // Controlled prop
     toggleRef // Ref to external toggle button if needed (optional)
 }) => {
-    const { theme } = useTheme();
+    const theme = "dark";
     const [open, setOpen] = useState(false);
     const openRef = useRef(false);
 

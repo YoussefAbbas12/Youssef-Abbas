@@ -5,7 +5,6 @@ import Header from './components/Header';
 import Squares from './components/Squares';
 import { NavbarProvider } from './contexts/NavbarContext';
 import { useTheme } from './contexts/ThemeContext';
-import FloatingThemeToggle from './components/FloatingThemeToggle';
 
 // Pages
 import Home from './pages/Home';
@@ -38,8 +37,6 @@ function App() {
               <Route path="/" element={<Home />} />
             </Routes>
           </AnimatePresence>
-
-          <FloatingThemeToggle />
         </div>
       </NavbarProvider>
   );

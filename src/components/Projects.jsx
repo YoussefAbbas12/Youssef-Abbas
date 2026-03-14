@@ -13,9 +13,9 @@ const Projects = ({ activeTab }) => {
               <motion.div
                 key={project.id}
                 layout
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.9 }}
+                exit={{ scale: 0.9 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 className="group relative overflow-hidden rounded-2xl bg-slate-900/50 border border-slate-800/50 hover:border-cyan-400/50 transition-all duration-500 shadow-lg hover:shadow-cyan-500/20"
                 whileHover={{ y: -8 }}
@@ -75,9 +75,9 @@ const Projects = ({ activeTab }) => {
               <motion.div
                 key={cert.id}
                 layout
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.9 }}
+                exit={{ scale: 0.9 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 className="group relative overflow-hidden rounded-2xl bg-slate-900/50 border border-slate-800/50 hover:border-cyan-400/50 transition-all duration-500 shadow-lg hover:shadow-cyan-500/20"
                 whileHover={{ y: -8 }}
