@@ -91,12 +91,14 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <form className="space-y-6">
+                <form className="space-y-6" action="https://api.web3forms.com/submit" method="POST">
+                  <input type="hidden" name="access_key" value="46db0722-b0fd-4bba-9641-715c8a7897a6">
                   <div className="group">
                     <div className="relative">
                       <FaUser className="absolute left-4 top-1/2 transform -translate-y-1/2 dark:text-slate-400 text-slate-400 group-focus-within:text-cyan-600 dark:group-focus-within:text-cyan-400 transition-colors duration-300" />
                       <input
                         type="text"
+                        name="Name"
                         placeholder="Enter Your Name..."
                         className="w-full pl-12 pr-4 py-4 dark:bg-slate-800/50 bg-slate-50 border dark:border-slate-600/50 border-slate-200 rounded-xl dark:text-white text-slate-800 dark:placeholder-slate-400 placeholder-slate-400 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 dark:focus:ring-cyan-400/20 transition-all duration-300"
                         required
@@ -109,6 +111,7 @@ const Contact = () => {
                       <FaEnvelope className="absolute left-4 top-1/2 transform -translate-y-1/2 dark:text-slate-400 text-slate-500 group-focus-within:text-cyan-400 transition-colors duration-300" />
                       <input
                         type="email"
+                        name="Email"
                         placeholder="Enter Your Email..."
                         className="w-full pl-12 pr-4 py-4 dark:bg-slate-800/50 bg-slate-50 border dark:border-slate-600/50 border-slate-200 rounded-xl dark:text-white text-slate-900 dark:placeholder-slate-400 placeholder-slate-500 focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-all duration-300"
                         required
@@ -122,6 +125,7 @@ const Contact = () => {
                       <textarea
                         placeholder="Enter Message..."
                         rows="4"
+                        name="Message"
                         className="w-full pl-12 pr-4 py-4 dark:bg-slate-800/50 bg-slate-50 border dark:border-slate-600/50 border-slate-200 rounded-xl dark:text-white text-slate-900 dark:placeholder-slate-400 placeholder-slate-500 focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-all duration-300 resize-none"
                         required
                       ></textarea>
