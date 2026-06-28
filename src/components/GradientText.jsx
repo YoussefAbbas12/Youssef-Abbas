@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const TEXTS_TO_TYPE = ["Front End Developer", "UI/UX Developer" , "Back End Developer"];
+const TEXTS_TO_TYPE = ["Full Stack Developer", "UI/UX Developer"];
 
 export default function LoopingGradientText({
   className = "",
