@@ -81,12 +81,12 @@ export const projects = [
   },
   {
     id: 9,
-    title: "Weather App",
-    description: "Simple weather application that allows users to check the current weather conditions for cities around the world.",
-    tags: ["JavaScript", "Weather API", "HTML", "CSS"],
-    image_url: "weather.png",
-    demo_url: "https://youssefabbas12.github.io/weather-app/",
-    github_url: "https://github.com/YoussefAbbas12/weather-app.git",
+    title: "Egyptian Restaurant",
+    description: "Modern and elegant Egyptian restaurant website showcasing traditional Egyptian cuisine with a contemporary dining experience.",
+    tags: ["React", "JavaScript", "HTML", "CSS"],
+    image_url: "resturant.png",
+    demo_url: "https://restaurant-mu-dun.vercel.app/",
+    github_url: "",
     featured: false
   },
 ];
