@@ -14,8 +14,8 @@ export default defineConfig({
     // Target modern browsers for smaller bundles
     target: 'es2020',
 
-    // Increase chunk size warning limit (heavy 3D libs)
-    chunkSizeWarningLimit: 1500,
+    // Increase chunk size warning limit (R3F + Three.js are inherently large)
+    chunkSizeWarningLimit: 2500,
 
     // Use terser for production minification (removes dead code aggressively)
     minify: 'terser',
@@ -53,73 +53,7 @@ export default defineConfig({
           return 'assets/[name]-[hash][extname]';
         },
 
-        // Aggressive code splitting for optimal caching
-        manualChunks(id) {
-          // React core (changes rarely → long cache life)
-          if (id.includes('node_modules/react/') || id.includes('node_modules/react-dom/')) {
-            return 'vendor-react';
-          }
-
-          // React Router
-          if (id.includes('node_modules/react-router')) {
-            return 'vendor-router';
-          }
-
-          // Animation libraries
-          if (id.includes('node_modules/framer-motion') || id.includes('node_modules/motion')) {
-            return 'vendor-motion';
-          }
-          if (id.includes('node_modules/gsap')) {
-            return 'vendor-gsap';
-          }
-
-          // Three.js core (very heavy, separate chunk)
-          if (id.includes('node_modules/three/')) {
-            return 'vendor-three';
-          }
-
-          // React Three Fiber ecosystem
-          if (
-            id.includes('node_modules/@react-three/fiber') ||
-            id.includes('node_modules/@react-three/drei') ||
-            id.includes('node_modules/@react-three/rapier')
-          ) {
-            return 'vendor-r3f';
-          }
-
-          // Spline (very heavy, load last)
-          if (
-            id.includes('node_modules/@splinetool/react-spline') ||
-            id.includes('node_modules/@splinetool/runtime')
-          ) {
-            return 'vendor-spline';
-          }
-
-          // Mesh utilities
-          if (id.includes('node_modules/meshline')) {
-            return 'vendor-meshline';
-          }
-
-          // UI utilities & icons
-          if (
-            id.includes('node_modules/react-icons') ||
-            id.includes('node_modules/lucide-react')
-          ) {
-            return 'vendor-icons';
-          }
-
-          if (
-            id.includes('node_modules/clsx') ||
-            id.includes('node_modules/tailwind-merge')
-          ) {
-            return 'vendor-utils';
-          }
-
-          // Supabase
-          if (id.includes('node_modules/@supabase')) {
-            return 'vendor-supabase';
-          }
-        },
+        // Let Vite handle dynamic chunk splitting naturally so React and its ecosystem don't have circular dependency issues
       },
     },
 
@@ -144,13 +78,5 @@ export default defineConfig({
     exclude: [
       '@splinetool/runtime', // Exclude heavy runtime from pre-bundling
     ],
-  },
-
-  // Improve resolve performance
-  resolve: {
-    alias: {
-      // Ensures React is always the same instance
-      'react': 'react',
-    },
   },
 })
