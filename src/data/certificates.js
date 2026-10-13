@@ -4,7 +4,7 @@ export const certificates = [
     title: "International Diploma",
     issuer: "Pearson (BTEC)",
     issue_date: "2024-08-05",
-    image_url: "person 1.jpg",
+    image_url: "person 1.webp",
     credential_url: "https://drive.google.com/file/d/1FzpOPM0-GBCjcfO9AKtSWmowCcmOIfs_/view?usp=sharing"
   },
   {
@@ -12,7 +12,7 @@ export const certificates = [
     title: "SCTE Compitition",
     issuer: "Ministry of Education",
     issue_date: "2023-06-15",
-    image_url: "SCTE.jpg",
+    image_url: "SCTE.webp",
     credential_url: "https://drive.google.com/file/d/1nmLFYceDlNuwDhAzB973Q92ODdWtS0c3/view?usp=sharing"
   },
   {
@@ -20,7 +20,7 @@ export const certificates = [
     title: "Digitopia Compitition",
     issuer: "Ministry of Education",
     issue_date: "2025-09-5",
-    image_url: "digitopia.png",
+    image_url: "digitopia.webp",
     credential_url: "https://drive.google.com/file/d/10qSpE1Q4v4YcRIweCtqQ9nX5gXX0PBQK/view?usp=sharing"
   },
   {
@@ -28,7 +28,7 @@ export const certificates = [
     title: "English Deploma",
     issuer: "UNIX Acadimy",
     issue_date: "2025-11-22",
-    image_url: "unix1.png",
+    image_url: "unix1.webp",
     credential_url: "https://drive.google.com/file/d/15IY6TPXe6UPSGS_gt8pTrZkFxI8MlDlM/view?usp=sharing"
   },
   {
@@ -36,7 +36,7 @@ export const certificates = [
     title: "English Deploma",
     issuer: "UNIX Acadimy",
     issue_date: "2025-11-22",
-    image_url: "unix2.png",
+    image_url: "unix2.webp",
     credential_url: "https://drive.google.com/file/d/11QQ89G3HG2nm9orX9DcdLyihmVi3bYcU/view?usp=sharing"
   },
   {
@@ -44,7 +44,7 @@ export const certificates = [
     title: "Python course",
     issuer: "Mahara-Tech",
     issue_date: "2024-07-15",
-    image_url: "python.png",
+    image_url: "python.webp",
     credential_url: "https://drive.google.com/file/d/1MSBIykDPEtdRmlpaqKREtLrwb5EY8Uu5/view?usp=sharing"
   },
   {
@@ -52,7 +52,7 @@ export const certificates = [
     title: "HTML&CSS Certificate",
     issuer: "Mahara-Tech",
     issue_date: "2024-06-15",
-    image_url: "html.png",
+    image_url: "html.webp",
     credential_url: "https://drive.google.com/file/d/1k9k9iwCj3xtspenWS1GZnlij4tO6HULp/view?usp=sharing"
   },
   {
@@ -60,7 +60,7 @@ export const certificates = [
     title: "JS Certificate",
     issuer: "Mahara-Tech",
     issue_date: "2024-06-25",
-    image_url: "js.png",
+    image_url: "js.webp",
     credential_url: "https://drive.google.com/file/d/1UjGnH4pBayUO6CqvoP_vebxmjVy4g1n5/view?usp=sharing"
   },
   {
@@ -68,7 +68,7 @@ export const certificates = [
     title: "Power Of AI",
     issuer: "PlanB",
     issue_date: "2025-09-22",
-    image_url: "planb.png",
+    image_url: "planb.webp",
     credential_url: "https://drive.google.com/file/d/1CkURfhJLtA8vID91pQmB6SZEXUTLjgKP/view?usp=sharing"
   },
 ];

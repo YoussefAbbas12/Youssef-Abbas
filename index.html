@@ -21,7 +21,7 @@
     <meta property="og:url" content="https://youssef-abbas.vercel.app/" />
     <meta property="og:title" content="Youssef Abbas | Full Stack Web Developer" />
     <meta property="og:description" content="Youssef Abbas is a passionate Full Stack Web Developer specializing in React.js, Node.js, and modern web technologies. Explore my portfolio of projects." />
-    <meta property="og:image" content="https://youssef-abbas.vercel.app/MyPhoto.png" />
+    <meta property="og:image" content="https://youssef-abbas.vercel.app/MyPhoto.webp" />
     <meta property="og:image:alt" content="Youssef Abbas - Full Stack Developer" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -33,7 +33,7 @@
     <meta name="twitter:url" content="https://youssef-abbas.vercel.app/" />
     <meta name="twitter:title" content="Youssef Abbas | Full Stack Web Developer" />
     <meta name="twitter:description" content="Youssef Abbas is a passionate Full Stack Web Developer specializing in React.js, Node.js, and modern web technologies." />
-    <meta name="twitter:image" content="https://youssef-abbas.vercel.app/MyPhoto.png" />
+    <meta name="twitter:image" content="https://youssef-abbas.vercel.app/MyPhoto.webp" />
     <meta name="twitter:image:alt" content="Youssef Abbas - Full Stack Developer" />
     <meta name="twitter:creator" content="@y_abbas12" />
 
@@ -49,11 +49,24 @@
     <link rel="dns-prefetch" href="https://api.web3forms.com" />
     <link rel="dns-prefetch" href="https://github.com" />
 
-    <!-- ===================== GOOGLE FONTS (preload for perf) ===================== -->
+    <!-- ===================== GOOGLE FONTS (Non-render-blocking) ===================== -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Cascadia+Code&display=swap"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Cascadia+Code&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Cascadia+Code&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
 
     <!-- ===================== STRUCTURED DATA (JSON-LD) ===================== -->
     <script type="application/ld+json">
@@ -62,7 +75,7 @@
       "@type": "Person",
       "name": "Youssef Mohamed Abbas",
       "url": "https://youssef-abbas.vercel.app/",
-      "image": "https://youssef-abbas.vercel.app/MyPhoto.png",
+      "image": "https://youssef-abbas.vercel.app/MyPhoto.webp",
       "sameAs": [
         "https://github.com/YoussefAbbas12",
         "https://www.instagram.com/y_abbas12/",

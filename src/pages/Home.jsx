@@ -1,4 +1,4 @@
-import React, { useState, lazy, Suspense } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { motion } from "framer-motion";
 import { FaGithub, FaInstagram, FaDownload, FaBriefcase, FaWhatsapp } from 'react-icons/fa';
 import { AnimatedGradientTextDemo } from '../components/AnimatedGradientTextDemo';
@@ -23,6 +23,22 @@ const LanyardSkeleton = () => (
 
 const Home = () => {
     const { theme } = useTheme();
+    const [load3D, setLoad3D] = useState(false);
+
+    useEffect(() => {
+        // Only load 3D on desktop screens (>=1024px) and after page is interactive
+        if (typeof window === 'undefined' || window.innerWidth < 1024) return;
+
+        const timer = setTimeout(() => {
+            if ('requestIdleCallback' in window) {
+                window.requestIdleCallback(() => setLoad3D(true), { timeout: 2500 });
+            } else {
+                setLoad3D(true);
+            }
+        }, 1500);
+
+        return () => clearTimeout(timer);
+    }, []);
 
     return (
         <motion.main
@@ -117,12 +133,16 @@ const Home = () => {
                     </motion.div>
                 </div>
 
-                {/* Lazy-loaded 3D Lanyard */}
-                <Suspense fallback={<LanyardSkeleton />}>
-                    <div className="hidden lg:flex flex-1 justify-center h-[600px] w-full order-first lg:order-none" aria-hidden="true">
-                        <Lanyard position={[0, 0, 15]} gravity={[0, -40, 0]} fov={18} transparent={true} />
-                    </div>
-                </Suspense>
+                {/* Deferred Lazy-loaded 3D Lanyard: Desktop only after main thread settles */}
+                <div className="hidden lg:flex flex-1 justify-center h-[600px] w-full order-first lg:order-none" aria-hidden="true">
+                    {load3D ? (
+                        <Suspense fallback={<LanyardSkeleton />}>
+                            <Lanyard position={[0, 0, 15]} gravity={[0, -40, 0]} fov={18} transparent={true} />
+                        </Suspense>
+                    ) : (
+                        <LanyardSkeleton />
+                    )}
+                </div>
             </section>
 
             {/* ===================== ABOUT SECTION ===================== */}
@@ -142,7 +162,7 @@ const Home = () => {
                     >
                         <div className="w-full h-[420px] md:h-[530px] flex items-center justify-center">
                             <img
-                                src="/MyPhoto.png"
+                                src="/MyPhoto.webp"
                                 className="about-img"
                                 alt="Youssef Abbas - Full Stack Web Developer"
                                 width="400"
