@@ -1,0 +1,11 @@
+# robots.txt for Youssef Abbas Portfolio
+# https://youssef-abbas.vercel.app/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://youssef-abbas.vercel.app/sitemap.xml
+
+# Crawl delay (optional, be respectful to crawlers)
+Crawl-delay: 1

@@ -24,8 +24,12 @@ const Projects = ({ activeTab }) => {
                   <div className="relative h-48 overflow-hidden">
                     <img
                       src={`projects/${project.image_url}`}
-                      alt={project.title}
+                      alt={`${project.title} - Project Screenshot`}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      width="400"
+                      height="192"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <div className="absolute inset-0 from-slate-900 via-slate-900/60 to-transparent"></div>
                   </div>
@@ -50,16 +54,26 @@ const Projects = ({ activeTab }) => {
                   )}
                   <div className="flex gap-3 mt-4">
                     {project.demo_url && (
-                      <a href={project.demo_url} target="_blank" rel="noopener noreferrer"
-                        className="flex-1 px-4 py-2.5 bg-gradient-to-r from-cyan-600 to-cyan-700 hover:from-cyan-500 hover:to-cyan-600 text-white rounded-lg text-center text-sm font-semibold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-cyan-500/30">
-                        <FaExternalLinkAlt className="text-xs" />
+                      <a
+                        href={project.demo_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`View live demo of ${project.title}`}
+                        className="flex-1 px-4 py-2.5 bg-gradient-to-r from-cyan-600 to-cyan-700 hover:from-cyan-500 hover:to-cyan-600 text-white rounded-lg text-center text-sm font-semibold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-cyan-500/30"
+                      >
+                        <FaExternalLinkAlt className="text-xs" aria-hidden="true" />
                         <span>Live Demo</span>
                       </a>
                     )}
                     {project.github_url && (
-                      <a href={project.github_url} target="_blank" rel="noopener noreferrer"
-                        className="flex-1 px-4 py-2.5 bg-slate-800/80 hover:bg-slate-700 text-slate-200 rounded-lg text-center text-sm font-semibold transition-all duration-300 flex items-center justify-center gap-2 border border-slate-700/50">
-                        <FaGithub className="text-base" />
+                      <a
+                        href={project.github_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`View source code of ${project.title} on GitHub`}
+                        className="flex-1 px-4 py-2.5 bg-slate-800/80 hover:bg-slate-700 text-slate-200 rounded-lg text-center text-sm font-semibold transition-all duration-300 flex items-center justify-center gap-2 border border-slate-700/50"
+                      >
+                        <FaGithub className="text-base" aria-hidden="true" />
                         <span>Code</span>
                       </a>
                     )}
@@ -86,8 +100,12 @@ const Projects = ({ activeTab }) => {
                   <div className="relative h-48 overflow-hidden">
                     <img
                       src={`certificate-images/${cert.image_url}`}
-                      alt={cert.title}
+                      alt={`${cert.title} Certificate`}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      width="400"
+                      height="192"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <div className="absolute inset-0 from-slate-900 via-slate-900/60 to-transparent"></div>
                   </div>
@@ -110,9 +128,14 @@ const Projects = ({ activeTab }) => {
                   )}
                   <div className="flex gap-3 mt-4">
                     {cert.credential_url && (
-                      <a href={cert.credential_url} target="_blank" rel="noopener noreferrer"
-                        className="flex-1 px-4 py-2.5 bg-gradient-to-r from-cyan-600 to-cyan-700 hover:from-cyan-500 hover:to-cyan-600 text-white rounded-lg text-center text-sm font-semibold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-cyan-500/30">
-                        <FaExternalLinkAlt className="text-xs" />
+                      <a
+                        href={cert.credential_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`View ${cert.title} certificate from ${cert.issuer}`}
+                        className="flex-1 px-4 py-2.5 bg-gradient-to-r from-cyan-600 to-cyan-700 hover:from-cyan-500 hover:to-cyan-600 text-white rounded-lg text-center text-sm font-semibold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-cyan-500/30"
+                      >
+                        <FaExternalLinkAlt className="text-xs" aria-hidden="true" />
                         <span>View Certificate</span>
                       </a>
                     )}
